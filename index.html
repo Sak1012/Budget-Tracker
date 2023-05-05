@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="log">
+        <form method="get" action="home.html">
+            <legend id="login">Login</legend>
+            <input type="text" name="UserName" id="UserName" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button id="butt">Login</button>
+        </form>
+    </div>
+    <div class="oval"></div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDWrRpJmdqyJ7WDaROBe3MuUu8T72qLmdM",
+            authDomain: "budget-tracker-37222.firebaseapp.com",
+            projectId: "budget-tracker-37222",
+            storageBucket: "budget-tracker-37222.appspot.com",
+            messagingSenderId: "750614326013",
+            appId: "1:750614326013:web:5d5265d9a53de2edcf6c94"
+        };
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getDatabase, ref, set, child, get }
+            from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"
+        const db = getDatabase()
+    </script>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
