@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(38, 29, 20);
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 400px;
+    width: 550px;
+
+}
+
+#login {
+    font-family: 'Andale Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+}
+
+#UserName {
+    width: 482px;
+    height: 69px;
+    border: 1px solid orangered;
+    border-radius: 12px;
+    outline: 2px orangered;
+    background: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 0 20px;
+    color: orangered;
+}
+
+#UserName::placeholder {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 0 15px;
+    color: rgba(255, 69, 0, 0.2);
+}
+
+#password {
+
+    width: 482px;
+    height: 69px;
+    border: None;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(255, 69, 0, 0.25);
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 0 20px;
+    color: orangered;
+}
+
+#password::placeholder {
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 0px 15px;
+}
+
+button {
+
+    width: 191px;
+    height: 59px;
+    background: none;
+    border-radius: 12px;
+    border: 1px solid orangered;
+    font-family: Andale Mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    /* identical to box height */
+    color: orangered;
+
+}
+
+#password:hover,
+#UserName:hover,
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5em 0.5em -0.4em orangered;
+    transition: 10ms;
+}

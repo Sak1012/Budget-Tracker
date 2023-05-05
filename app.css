@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(38, 29, 20);
+    color: orangered;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#displayId {
+    float: left;
+    font-weight: 200;
+}
+
+#head {
+    text-align: right;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+input {
+    flex-basis: 75%;
+    background-color: rgb(38, 29, 20);
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 0.5px solid orangered;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    outline: 1px solid orangered;
+    color: orangered;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+#income::placeholder,
+#expenseName::placeholder,
+#expense::placeholder {
+    width: 160px;
+    height: 50px;
+    left: 45px;
+    top: 373px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 0 15px;
+    color: rgba(255, 69, 0, 0.5);
+}
+
+button {
+    background-color: rgb(38, 29, 20);
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.7em 0.5em -0.4em orangered;
+    background-color: orangered;
+    color: rgb(38, 29, 20);
+    transition: 0.5s;
+}
+
+input:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.7em 0.5em -0.4em orangered;
+    transition: 0.5s;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0em 1em;
+
+}
+
+th {
+    background-color: none;
+}
+
+
+td {
+    padding: 20px 10px;
+    width: 1213px;
+    height: 100px;
+
+}
+
+td:first-child {
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 5px 1em 0 1em;
+    font-size: 25px;
+    border-width: 1px 0px 1px 1px;
+    border-color: orangered;
+    border-style: solid;
+}
+
+
+td:last-child {
+    text-align: right;
+    border-radius: 0 0.5em 0.5em 0;
+    padding: 5px 1.5em 0 5em;
+    font-size: 35px;
+    border-width: 1px 1px 1px 0px;
+    border-color: orangered;
+    border-style: solid;
+}
+
+td:last-child:hover {
+    text-align: center;
+    transition-duration: 5s;
+}
+
+
+tr:not(:first-child) {
+    background-color: rgb(38, 29, 20);
+    border: 0.5px solid orangered;
+    border-width: 1px 1px 1px 1px;
+    border-color: orangered;
+    border-style: solid;
+}
+
+tr:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.7em 0.5em -0.4em orangered;
+    transition: 0.5s;
+}
+
+tr button {
+    display: none;
+}
+
+tr:hover button {
+    display: inline;
+    float: right;
+}
+
+#summary p {
+    margin: 10px 0;
+    font-weight: bold;
+}

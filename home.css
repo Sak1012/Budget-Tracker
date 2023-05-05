@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(38, 29, 20);
+    color: orangered;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    text-align: right;
+}
+
+#hello {
+    float: left;
+    font-weight: 200;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: xx-large;
+}
+
+.calander {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-elements {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-elements a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #333;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+img {
+    display: flex;
+    flex-basis: 1;
+    width: 500px;
+    height: 450px;
+}

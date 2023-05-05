@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="head"> <span id="displayId"> </span> Balance: <span id="balance">0</span></h1>
+        <form>
+            <input type="number" id="income" placeholder="Income">
+            <input type="text" name="expenseName" id="expenseName" placeholder="Expense Name">
+            <input type="number" id="expense" placeholder="Expense">
+            <button type="button" id="button" onclick="addTransaction()">Tranasct
+                ✓
+            </button>
+        </form>
+        <table id="transactions">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h2>Summary</h2>
+        <div id="summary">
+            <p>Total Income: <span id="totalIncome">0</span></p>
+            <p>Total Expense: <span id="totalExpense">0</span></p>
+        </div>
+    </div>
+    <div class="oval"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
